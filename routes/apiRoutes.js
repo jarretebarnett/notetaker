@@ -4,7 +4,7 @@ const router = require("express").Router();
 const db = require("../db/db.json");
 
 router.get("/notes", (req, res) => {
-    console.log("hello");
+    // console.log("hello");
     fs.readFileSync("./db/db.json", db);
     res.json(db);
 })
