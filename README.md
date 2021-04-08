@@ -8,6 +8,7 @@
 * Contributions
 * Licensing
 * Tests
+* Demo
 * Questions
 
 ## Description
@@ -16,7 +17,7 @@ This application uses a backend server to store user input as personal notes for
 
 ## Installation
 
-This application can be installed by either cloning the HTTPS address, or visiting the deployed Heroku website for use.
+This application can be installed by either cloning the HTTPS address, or running CLI commands in Terminal. You can also visit the deployed page on Heroku at: https://backendnotetaker.herokuapp.com/
 
 ## Usage
 
@@ -33,6 +34,16 @@ There are no external contributors to this project.
 ## Tests
 
 There is no back end testing involved. If working properly, data input should be saved and stored accordingly for the user to either revisit, edit, or dispose of when finished.
+
+## Demo
+
+Provided below are screenshots and recorded demonstration of how the application works.
+
+![notesi](assets/noteindex.png)
+
+![notesii](assets/notes.png)
+
+Video link: https://youtu.be/x0djb9VZnA8
 
 ## Questions
 
