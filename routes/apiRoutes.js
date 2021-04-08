@@ -1,13 +1,10 @@
 const fs = require("fs");
 const uuid = require("uuid");
 const router = require("express").Router();
-const db = require("../db/db.json");
 
 router.get("/notes", (req, res) => {
-    // console.log("hello");
-    fs.readFileSync("./db/db.json", db);
-    // console.log(db);
-    res.json(db);
+    const data = fs.readFileSync("./db/db.json");
+    res.json(JSON.parse(data));
 })
 
 router.post("/notes", (req, res) => {
@@ -16,7 +13,6 @@ router.post("/notes", (req, res) => {
     addNote.id = uuid.v4();
     notes.push(addNote);
     fs.writeFileSync("./db/db.json", JSON.stringify(notes));
-    // console.log(notes);
     res.json(notes);
 })
 
